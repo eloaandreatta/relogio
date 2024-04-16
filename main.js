@@ -22,7 +22,7 @@ const tempos = [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4]
 
 contadores[0].textContent = tempoObjetivo1 - tempoAtual;
 
-function calcularTempo(tempoObjetivo1){
+function calculaTempo(tempoObjetivo1){
     let tempoAtual = new Date();
     let tempoFinal = tempoObjetivo1 - tempoAtual;
     let segundos = Math.floor(tempoFinal / 1000);
@@ -53,7 +53,7 @@ function atualizaCronometro(){
 
 function comecaCronometro(){
     atualizaCronometro();
-    setInterval(atualizarCronometro,1000);
+    setInterval(atualizaCronometro,1000);
 }
 
 comecaCronometro();
